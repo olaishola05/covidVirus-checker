@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <title>Covid Symptoms Checker</title>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Covid Checker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div class="jumbotron container mt-4 text-center text-primary jumbotron bg-cover">
+            <div class="overlay"></div>
+            <h1 class="display-4">Covid Symptoms Checker</h1>
+            <p class="lead text-center">
+                This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+                It uses utility classes for typography and spacing to space content out within the larger container.
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#forms" role="button">Click to check</a>
+            </p>
+        </div>
+        <div class="container mt-4 text-primary">
+            <div class="form-container" id="forms">
+                <form class="form-group" id="form-content">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> Email address:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group col-xs-4">
+                        <label for="Location">Your Location:</label>
+                        <input type="text" name="location" id="location" class="form-control" placeholder="Your Location" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                    </div>
+                    <div class="form-group">
+                        <label>Traveled to any affected country:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option2" />
+                            Yes
+
+                            <input type="radio" class="form-check-input ml-4" name="optionsRadios" id="optionsRadios2" value="option2" />
+                            No
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tick symptoms felt:</label>
+                        <br />
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" />
+                                Fever
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" />
+                                Consistent Cough
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" />
+                                Consistent Sneezing
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" />
+                                Difficult Breathing
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" />
+                                Flu
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mb-5">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
