@@ -31,23 +31,24 @@
         </div>
     </nav>
     <body>
-        <div class="jumbotron container mt-4 text-center text-primary jumbotron bg-cover">
+        <div class="jumbotron container text-white mt-4 text-center jumbotron bg-a-50" id="jumbo">
             <div class="overlay"></div>
             <h1 class="display-4">Covid Symptoms Checker</h1>
-            <p class="lead text-center">
-                This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-            </p>
             <hr class="my-4" />
-            <p>
-                It uses utility classes for typography and spacing to space content out within the larger container.
+            <p class="lead text-center p-2">
+                To know more about Covid-19 symptoms
             </p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Click to check</a>
+                <a class="btn btn-primary btn-lg" href="who.com" role="button">Click to check</a>
             </p>
         </div>
         <div class="container mt-4 text-primary" id="main-content">
             <div class="form-container" id="forms">
                 <form class="form-group" id="form-content">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your fullname" />
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> Email address:</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -57,11 +58,11 @@
                         <label for="Location">Your Location:</label>
                         <input type="text" name="location" id="location" class="form-control" placeholder="Your Location" />
                     </div>
+                    <address class="form-group">
+                        <label for="address">Home Addres:</label>
+                        <input type="text" class="form-control" id="userAddress" placeholder="Enter your Home Address" />
+                    </address>
 
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-                    </div>
                     <div class="form-group">
                         <label>Traveled to any affected country:</label>
                         <div class="form-check">
@@ -107,10 +108,11 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mb-5 w-25">Submit</button>
+                    <button type="submit" class="btn btn-primary mb-5 w-25" id="form-btn">Submit</button>
                 </form>
             </div>
-            <div class="sideDiv">image</div>
+            <div class="sideDiv"><img src="/images/covid.jpeg" alt="doctor with nose mask" /></div>
         </div>
+        <script src="app.js"></script>
     </body>
 </html>
