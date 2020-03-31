@@ -23,7 +23,6 @@ label {
 
 .form-container {
     width: 45%;
-    /* margin: 0 auto; */
 }
 
 .sideDiv {
@@ -31,10 +30,10 @@ label {
     background-color: white;
     height: 500px;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sideDiv img {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
