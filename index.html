@@ -45,7 +45,7 @@
         </div>
         <div class="container mt-4 text-primary" id="main-content">
             <div class="form-container" id="forms">
-                <form class="form-group" id="form-content">
+                <form class="form-group" id="form-content" name="myForm">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter your fullname" />
@@ -67,9 +67,10 @@
                     <div class="form-group">
                         <label>Traveled to any affected country:</label>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" />
-                            Yes
-                            <input type="radio" class="form-check-input ml-4" name="optionsRadios" id="optionsRadios2" value="option2" />
+                            <!--onchange="checkRadio(this)"-->
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionYes" value="" />
+                            Yes <br />
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionNo" value="" />
                             No
                         </div>
                     </div>
@@ -79,31 +80,31 @@
                         <br />
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" />
+                                <input class="form-check-input" type="checkbox" name="box" value="" />
                                 Fever
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" />
+                                <input class="form-check-input" type="checkbox" name="box" value="" />
                                 Consistent Cough
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" />
+                                <input class="form-check-input" type="checkbox" name="box" value="" />
                                 Consistent Sneezing
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" />
+                                <input class="form-check-input" type="checkbox" name="box" value="" />
                                 Difficult Breathing
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="" />
+                                <input class="form-check-input" type="checkbox" name="box" value="" />
                                 Flu
                             </label>
                         </div>
