@@ -7,33 +7,12 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-/* .overlay {
-    background-color: rgba(0, 0, 0, 0.9);
-} */
 
 label {
     font-weight: bold;
 }
-#main-content {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .form-container {
-    width: 45%;
-}
-
-.sideDiv {
-    width: 45%;
-    background-color: white;
-    height: 500px;
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.sideDiv img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    margin: 0 auto;
 }

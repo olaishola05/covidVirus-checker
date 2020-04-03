@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("#form-btn").onclick = () => {
+    document.querySelector("#form-btn").onsubmit = () => {
         let email = document.querySelector("#userName").value;
         let name = document.querySelector("#username").value;
         let location = document.querySelector("#location").value;
@@ -17,22 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 for (i = 0; i < optLength; i++) {
                     if (options[0].checked == true) {
-                        alert("pls self isolate");
+                        alert("pls self isolate for period of 14 days");
                         break;
                     }
 
                     if (options[1].checked == true) {
                         const symptoms = document.querySelectorAll('input[name = "box"]:checked');
+
                         let box = [];
-                        symptoms.forEach(symptom => {
+                        symptoms.forEach((symptom) => {
                             box.push(symptom.value);
 
-                            if (box.length > 1) {
+                            if (box.length > 0) {
                                 alert("there's possibilities of " + name + " having covid-19, pls get tested");
-                            }
-                            if (!box[symptom]) {
-                                alert(`hi ${name} theres possibility u dont have covid-19 since u 
-                                don't have any symptoms`);
                             }
                         });
                         break;
@@ -44,14 +41,19 @@ document.addEventListener("DOMContentLoaded", () => {
             };
         }
         checkRadio();
+
+        function clearInput() {
+            document.querySelector("#form-btn").onclick = () => {
+                document.querySelector("#userName").value = "";
+                document.querySelector("#username").value = "";
+                document.querySelector("#location").value = "";
+                document.querySelector("#userAddress").value = "";
+                document.myForm.optionsRadios.checked = false;
+                document.querySelectorAll("box").checked = false;
+
+                document.querySelector("#form-content").reset();
+            };
+        }
+        clearInput();
     };
-
-    // checkRadio();
 });
-
-// document.querySelector("#form-btn").addEventListener("click", radioButton);
-
-// const getDetails = () => {
-//     let info = `Hello ${name} from the info u tested positive `;
-// };
-// getDetails();

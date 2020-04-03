@@ -22,30 +22,31 @@
                 <li class="nav-item">
                     <a class="nav-link display-5" href="#forms">Check</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li> -->
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
             </ul>
         </div>
     </nav>
     <body>
         <div class="jumbotron container text-white mt-4 text-center jumbotron bg-a-50" id="jumbo">
             <div class="overlay"></div>
-            <h1 class="display-4">Covid Symptoms Checker</h1>
+            <h1 class="display-4 font-weight-light">Covid Symptoms Checker</h1>
             <hr class="my-4" />
-            <p class="lead text-center p-2">
+            <p class="lead text-center font-weight-light">
                 <bold>To know more about Covid-19 symptoms</bold>
             </p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="who.com" role="button">Click to check</a>
+                <a class="btn btn-primary btn-lg" href="#forms" role="button">Click to check</a>
             </p>
         </div>
-        <div class="container mt-4 text-primary" id="main-content">
+        <div class="container mt-4 text-primary mt-0" id="main-content">
             <div class="form-container" id="forms">
                 <form class="form-group" id="form-content" name="myForm">
+                    <h2 class="text-center font-weight-bold">Fill the form Below to check for status</h2>
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter your fullname" />
@@ -67,7 +68,6 @@
                     <div class="form-group">
                         <label>Traveled to any affected country:</label>
                         <div class="form-check">
-                            <!--onchange="checkRadio(this)"-->
                             <input type="radio" class="form-check-input" name="optionsRadios" id="optionYes" value="" />
                             Yes <br />
                             <input type="radio" class="form-check-input" name="optionsRadios" id="optionNo" value="" />
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" id="checkBox">
                         <label>Select symptoms felt:</label>
                         <br />
                         <div class="form-check form-check-inline">
@@ -110,10 +110,9 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary mb-5 w-25" id="form-btn">Submit</button>
+                    <button type="button" class="btn btn-primary mb-5 btn-block" id="form-btn">Submit</button>
                 </form>
             </div>
-            <div class="sideDiv"><img src="/images/covid.jpeg" alt="doctor with nose mask" /></div>
         </div>
         <script src="app.js"></script>
     </body>
