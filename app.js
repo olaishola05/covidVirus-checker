@@ -42,18 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         checkRadio();
 
-        function clearInput() {
-            document.querySelector("#form-btn").onclick = () => {
-                document.querySelector("#userName").value = "";
-                document.querySelector("#username").value = "";
-                document.querySelector("#location").value = "";
-                document.querySelector("#userAddress").value = "";
-                document.myForm.optionsRadios.checked = false;
-                document.querySelectorAll("box").checked = false;
+        // function clearInput() {
+        //     document.querySelector("#form-btn").onclick = () => {
+        //         document.querySelector("#userName").value = "";
+        //         document.querySelector("#username").value = "";
+        //         document.querySelector("#location").value = "";
+        //         document.querySelector("#userAddress").value = "";
+        //         document.myForm.optionsRadios.checked = false;
+        //         document.querySelectorAll("box").checked = false;
 
-                document.querySelector("#form-content").reset();
-            };
-        }
-        clearInput();
+        //         document.querySelector("#form-content").reset();
+        //     };
+        // }
+        // clearInput();
     };
 });
