@@ -1,5 +1,5 @@
 #jumbo {
-    background-image: url("test2.jpeg");
+    background-image: url("./images/test2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
